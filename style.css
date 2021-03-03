@@ -1,0 +1,490 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.eot");
+    src: url("webfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Vazir.woff2") format("woff2"),
+        url("../fonts/Vazir.woff") format("woff"),
+        url("../fonts/Vazir.ttf") format("truetype"),
+        url("../fonts/Yekan.svg") format("svg");
+}
+
+
+body {
+    background: rgb(106, 168, 195);
+    background: linear-gradient(51deg, rgba(106, 168, 195, 1) 0%, rgba(37, 132, 203, 1) 25%, rgb(31, 126, 228) 100%);
+    font-family: 'Vazir';
+    background: -moz-linear-gradient(51deg, rgba(106, 168, 195, 1) 0%, rgba(37, 132, 203, 1) 25%, rgb(31, 126, 228) 100%);
+}
+
+.login-form {
+    /* display: block;
+    margin: auto; */
+    margin-top: 65px;
+    width: 380px;
+    height: 490px;
+    line-height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 0px 10px rgb(0 0 0 / 40%), 0 5px 8px rgb(50 50 50 / 53%);
+    float: right;
+    margin-right: 70px;
+}
+
+::-webkit-input-placeholder {
+    position: relative;
+    left: 20px;
+    color: #686868;
+    -webkit-transition: 0.3s ease-in-out;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+::-moz-placeholder {
+    text-align: left;
+    color: #000000;
+    -moz-transition: 0.3s ease-in-out;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+
+:-ms-input-placeholder {
+    text-align: left;
+    color: #555555;
+    -ms-transition: 0.3s ease-in-out;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+:-moz-placeholder {
+    text-align: left;
+    color: #000000;
+    -moz-transition: 0.3s ease-in-out;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: rgba(0, 134, 255, 1);
+    opacity: 0;
+    font-family: 'Vazir';
+    font-size: 25px;
+}
+
+input:focus::placeholder {
+    color: rgba(0, 134, 255, 1);
+    opacity: 0;
+    font-family: 'Vazir';
+    font-size: 25px;
+}
+
+input:focus::-moz-placeholder {
+    color: rgba(0, 134, 255, 1);
+    opacity: 0;
+    font-family: 'Vazir';
+    font-size: 25px;
+}
+
+input:focus:-ms-input-placeholder {
+    color: rgba(0, 134, 255, 1);
+    opacity: 0;
+    font-family: 'Vazir';
+    font-size: 25px;
+}
+
+input:focus:-moz-placeholder {
+    color: rgba(0, 134, 255, 1);
+    opacity: 0;
+    font-family: 'Vazir';
+    font-size: 25px;
+}
+
+
+
+input[type="text"] {
+    background-image: url(man.svg);
+    background-size: 16px 30px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="email"] {
+    background-image: url(email.svg);
+    background-size: 16px 30px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="password"] {
+    background-image: url(login.svg);
+    background-size: 16px 30px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    border-bottom: 1px solid rgba(0, 134, 255, 1);
+    padding-bottom: 10px;
+    transition: all 0.4s ease-out;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+
+input[type="button"] {
+    background: rgb(106, 168, 195);
+    background-image: linear-gradient(51deg, rgba(106, 168, 195, 1) 0%, rgba(37, 132, 203, 1) 25%, rgb(31, 126, 228) 100%);
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    padding: 8px 0;
+
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s ease-out;
+}
+
+
+input[type="text"]:focus {
+    border-bottom: 2px solid rgba(0, 134, 255, 1);
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(29, 29, 29, 0.857);
+    background-image: url(man.svg);
+    background-size: 30px 30px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+input[type="email"]:focus {
+    border-bottom: 2px solid rgba(0, 134, 255, 1);
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(29, 29, 29, 0.857);
+    background-image: url(email.svg);
+    background-size: 30px 30px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+input[type="password"]:focus {
+    border-bottom: 2px solid rgba(0, 134, 255, 1);
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(29, 29, 29, 0.857);
+    background-image: url(login.svg);
+    background-size: 30px 30px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 400px) {
+    input[type="email"]:focus {
+        background-image: url(email.svg);
+        background-size: 22px 30px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type="text"]:focus {
+        background-image: url(man.svg);
+        background-size: 22px 30px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type="password"]:focus {
+        background-image: url(login.svg);
+        background-size: 22px 30px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    input[type="email"]:focus {
+        background-image: url(email.svg);
+        background-size: 22px 30px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    input[type="text"]:focus {
+        background-image: url(man.svg);
+        background-size: 20px 30px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    input[type="password"]:focus {
+        background-image: url(login.svg);
+        background-size: 20px 30px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        font-size: 15px;
+    }
+}
+
+span {
+    color: rgba(0, 134, 255, 1);
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+}
+
+input[type='button']:hover {
+    background: rgb(106, 168, 195);
+    background: linear-gradient(332deg, rgba(106, 168, 195, 1) 0%, rgba(37, 132, 203, 1) 25%, rgb(31, 143, 228) 100%);
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+h4 {
+    color: #646464;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+}
+
+p,
+a {
+    text-align: center;
+    color: #646464;
+    margin-top: 0;
+    line-height: 0.9;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+}
+
+/* p:nth-child(even) {
+    color: rgb(31, 126, 228);
+    font-family: 'Cairo', sans-serif;
+} */
+
+
+form {
+    margin-top: 50px;
+}
+
+img {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 40px;
+    transition: 2s transform ease-in-out;
+}
+
+img:hover {
+    transform: rotateY(180deg)
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        display: block;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .login-form {
+        margin: auto;
+        width: 95%;
+        height: 530px;
+        line-height: 1;
+        display: block;
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 0 0px 10px rgb(0 0 0 / 40%), 0 5px 8px rgb(50 50 50 / 53%);
+        float: none;
+    }
+}
+
+.head {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 4px 5px rgb(228, 31, 156);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (min-width: 767px) {
+    .head {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h4 {
+        padding: 30px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    a {
+        line-height: 1;
+        font-size: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+a.createacc {
+    color: rgb(31, 126, 228);
+    font-family: 'Cairo', sans-serif;
+}
+
+a:hover {
+    color: rgb(31, 126, 228);
+}
+
+a.createacc:hover {
+    color: rgba(31, 126, 228, 0.816);
+}
+
+/* this is checkbox */
+.squaredTwo {
+    width: 28px;
+    height: 28px;
+    background: #ff0202;
+
+    background: -webkit-linear-gradient(top, rgb(31, 126, 228) 0%, #e5e8e2 40%, rgb(31, 126, 228) 100%);
+    background: -moz-linear-gradient(top, rgb(31, 126, 228) 0%, #e5e8e2 40%, rgb(31, 126, 228) 100%);
+    background: -o-linear-gradient(top, rgb(31, 126, 228) 0%, #e5e8e2 40%, rgb(31, 126, 228) 100%);
+    background: -ms-linear-gradient(top, rgb(31, 126, 228) 0%, #e5e8e2 40%, rgb(31, 126, 228) 100%);
+    background: linear-gradient(top, rgb(31, 126, 228) 0%, #e5e8e2 40%, rgb(31, 126, 228) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#b3bead', GradientType=0);
+    margin: 20px auto;
+
+    -webkit-box-shadow: inset 0px 1px 1px rgb(248, 248, 248), 0px 1px 3px rgba(26, 26, 26, 0.966);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.squaredTwo label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 4px;
+    top: 4px;
+
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
+
+    background: -webkit-linear-gradient(top, rgb(11, 148, 221) 0%, #0160fa 100%);
+    background: -moz-linear-gradient(top, rgb(11, 148, 221) 0%, #0160fa 100%);
+    background: -o-linear-gradient(top, rgb(11, 148, 221) 0%, #0160fa 100%);
+    background: -ms-linear-gradient(top, rgb(11, 148, 221) 0%, #0160fa 100%);
+    background: linear-gradient(top, rgb(11, 148, 221) 0%, #0160fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222', endColorstr='#45484d', GradientType=0);
+}
+
+.squaredTwo label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid rgba(255, 255, 255, 0.816);
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredTwo label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+.squaredTwo input[type=checkbox]:checked+label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.RemMe {
+    position: relative;
+    bottom: 41px;
+    left: 68px;
+    display: inline;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fogot {
+    position: relative;
+    bottom: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    .RemMe {
+        position: relative;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .RemMe {
+        position: relative;
+        left: 10px;
+    }
+}
